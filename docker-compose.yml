@@ -1,0 +1,8 @@
+# docker-compose.yml
+demo:
+    build: .
+    command: /run.sh
+    working_dir: /
+    volumes:
+        - ./build/:/build:Z
+
